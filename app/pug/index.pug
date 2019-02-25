@@ -1,0 +1,21 @@
+include includes/_head
+body 
+	include includes/_header
+	#main-slider.swiper-container
+		.big-slider__wrapper.swiper-wrapper
+			.big-slider__slide.swiper-slide
+				include includes/_main-title
+			.big-slider__slide.swiper-slide
+				include includes/_our-work
+			.big-slider__slide.swiper-slide
+				include includes/_about
+			.big-slider__slide.swiper-slide
+				include includes/_feedback
+	.big-slider__pagination.swiper-pagination
+	
+	include includes/_footer
+
+script(src="/js/jquery-3.3.1.min.js")
+script(src="/js/owl.carousel.min.js")
+script(src="/js/swiper.min.js")
+script(src="/js/app.js")

@@ -1,0 +1,64 @@
+@font-face 
+	font-family 'MyriadPro'
+	src url('app/fonts/MyriadPro-Regular.woff') format('woff'),
+			url('app/fonts/MyriadPro-Regular.woff2') format('woff2')
+	font-weight normal
+	font-style normal
+	
+@font-face 
+	font-family 'MyriadPro'
+	src url('app/fonts/MyriadPro-Bold.woff') format('woff'),
+			url('app/fonts/MyriadPro-Bold.woff2') format('woff2')	
+	font-style normal
+	font-weight bold
+*
+	box-sizing border-box
+body
+	margin 0
+	padding 0
+	font-family 'MyriadPro'
+	font-weight normal	
+
+.button
+	background-color #ff8207
+	border none
+	border-radius 10px
+	text-transform uppercase
+	color #fff
+	outline none
+	
+.section-title
+	font-size 48px
+	color #28363d
+	font-weight 400
+	text-transform uppercase
+	position relative
+	text-align center
+	margin-bottom 60px
+	&:after
+		content url(../img/work/separator.png)
+		color #ff8207
+		position absolute
+		bottom -45px
+		left 50%
+		transform translateX(-50%)
+.section-subtitle
+	padding 0 200px
+	color #8198a0
+	font-size 18px
+	font-weight normal
+	line-height 36px
+	text-align center
+
+@media screen and (min-width 320px) and (max-width 768px) 
+	.section-title
+		font-size 34px
+		margin 0
+		margin-bottom 30px
+		&:after
+			bottom -25px
+	.section-subtitle
+		padding 0 60px
+		padding: 0 60px;
+		font-size: 14px;
+		line-height: 28px;

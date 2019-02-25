@@ -1,0 +1,126 @@
+.feedback
+	padding 90px 150px 40px 150px
+	height 100vh
+	max-height 1200px
+	&__subtitle
+		margin-bottom 55px
+	&__contacts-area
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
+	&__contacts
+		flex 1
+		text-align left
+		margin-right 50px
+	&__contacts-name
+		margin-top 0
+		margin-bottom 15px
+		color #ff8207
+		font-size 24px
+		font-weight 700
+		line-height 24px
+		text-transform uppercase
+	&__conacts-value
+		display inline-block
+		color #999
+		font-size 18px
+		font-weight 400
+		line-height 24px
+		text-transform uppercase
+		text-decoration none
+		margin-bottom 30px
+	&__contacts-link
+		margin-right 10px
+	&__form
+		flex 2
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+	&__input
+		border none
+		border-bottom 1px solid #999999
+		opacity .25
+		font-style italic
+		color 
+		font-size 18px
+		font-weight normal
+		margin-bottom 30px
+	&__label 
+		color #28363d
+		font-size 24px
+		font-weight 700
+		line-height 24px
+		text-transform uppercase
+		margin-bottom 20px
+	&__textarea
+		padding 5px
+		background linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 2%)
+		background-repeat repeat-y
+		background-size 100% 28px
+		background-color transparent
+		outline none
+		border none
+		line-height 28px
+		resize none
+		margin-bottom 40px
+		&::placeholder
+			font-family 'MyriadPro'
+			font-size 14px
+			font-style italic
+			color #999
+			opacity .25
+	&__capcha-area
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+	&__button-add-file
+		font-size 30px
+		padding 20px 17px
+		box-sizing content-box
+		max-height 50px
+		max-width 50px
+		position relative
+		outline none
+		margin-bottom 30px	
+		&:after
+			position absolute
+			right -120px
+			top 50%
+			transform translateY(-50%)
+			content "Фото"
+			font-family 'MyriadPro'
+			color #28363d
+			font-size 24px
+			font-weight 700
+			line-height 24px
+			text-transform uppercase
+	&__answer-capcha
+		width 50%
+	&__capcha-pict
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items end
+	&__capcha
+		width 140px
+		height 40px
+		background url(../img/feedback/capcha.png) 0 0 no-repeat
+		background-size cover
+		margin-right 180px
+	&__button-capcha-submit
+		padding 23px 57px
+			
+@media screen and (min-width 1400px)
+	.feedback
+		padding-top 120px

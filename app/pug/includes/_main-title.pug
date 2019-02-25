@@ -1,0 +1,28 @@
+section.main#main
+	.swiper-container#second-slider
+		-var titleOfSlides = ['главный заголовок', 'второй заголовок', 'третий заголовок', 'четвёртый заголовок', 'пятый заголовок'];
+		.swiper-wrapper.main__wrapper
+			-for(var i = 0; i < titleOfSlides.length; i++)
+				.swiper-slide.main__slide
+					.main__slide-content
+						h1.main__title= titleOfSlides[i]
+						.main__separator
+							pictute.main__separator-img
+								source(srcset='../img/main/separator_320.png' media="(max-width: 768px)")
+								source(srcset='../img/main/separator_768.png' media="(max-width: 1024px)")
+								img(srcset='../img/main/separator_1024.png' alt="separator")
+
+						p.main__subtitle  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, dolore!
+						button.button.main__button Оформить заявку
+		.swiper-button-prev.main__button-prev
+		.swiper-button-next.main__button-next
+		.swiper-pagination.main__pagination
+		a.main__link-to-down(href='#')
+
+
+		
+
+
+
+
+	

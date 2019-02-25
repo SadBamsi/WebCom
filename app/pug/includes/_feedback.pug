@@ -1,0 +1,44 @@
+section#feedback.feedback
+	h2.section-title.feedback__title оставьте отзыв
+	p.section-subtitle.feedback__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+	.feedback__contacts-area
+		.feedback__contacts
+			-var namesOfContacts = ['Наш адрес', 'Звоните', 'Пишите'];
+			-var valuesOfConatacts = ['г.Минск, ул. Скрыганова, 6А, 4 этаж', '+375 (29) 123-45-67,  +375 (33) 123-45-67', 'info@promo-webcom.by'];
+			-for(var i = 0; i < namesOfContacts.length; i++)
+				if i == 0
+					p.feedback__contacts-name= namesOfContacts[i]
+					span.feedback__conacts-value=valuesOfConatacts[i]
+
+				else if i == 1 
+					-var phones = ['+375 (29) 123-45-67', '+375 (33) 123-45-67']
+					p.feedback__contacts-name= namesOfContacts[i]
+					a.feedback__contacts-link.feedback__conacts-value(href="tel:" + phones[0])=phones[0]
+					a.feedback__contacts-link.feedback__conacts-value(href="tel:" + phones[1])=phones[1]
+
+				else
+					p.feedback__contacts-name= namesOfContacts[i]
+					a.feedback__contacts-link.feedback__conacts-value(href="mailto:" + valuesOfConatacts[i])=valuesOfConatacts[i]
+		.feedback__form.form
+			-var placeholders = ['Иванов Иван', 'example@mysite.com', 'Должность', 'Ваше сообщение'];
+			-var lables = ['Ваше имя', 'e-mail', 'Ваша должность','Отзыв'];
+				-for(var j = 0; j < lables.length; j++)
+					if j == 3
+						label.feedback__label.form__label(for="form-input-" + j)= lables[j]
+						textarea.feedback__textarea.form__textarea(id="form-input-" + j, placeholder= placeholders[j] , rows="6")
+					else
+						label.feedback__label.form__label(for="form-input-" + j)= lables[j]
+						input.feedback__input.form__input(id="form-input-" + j, placeholder = placeholders[j])
+				.feedback__capcha-area
+					button.button.feedback__button-add-file &plus;
+					label.feedback__label(for="feedback__answer-capcha") Введите код с картинки
+					input#feedback__answer-capcha.feedback__answer-capcha.feedback__input
+					.feedback__capcha-pict
+						.feedback__capcha
+						button.button.feedback__button-capcha-submit отправить
+
+
+					
+				
+
+			

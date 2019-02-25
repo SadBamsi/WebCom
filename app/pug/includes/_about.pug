@@ -1,0 +1,12 @@
+section#features.features
+	h2.section-title.features__title Почему мы
+	p.section-subtitle.features__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+	.features__area
+		-var features = [];
+		-for(var n = 1; n <= 8; n++)
+			-features.push('Преимущество ' + n)
+		-for(var i = 0; i < features.length; i++)
+			.features__card.features-card
+				.features-card__logo
+				h3.fetures-card__title= features[i]
+				p.features-card__subtitle Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium

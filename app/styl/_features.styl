@@ -1,0 +1,71 @@
+.features
+	padding 90px 50px 20px 50px
+	height 100vh
+	max-height 1080px
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	flex-direction column
+	justify-content space-between
+	overflow hidden
+	&__title
+		margin-top 0
+	&__subtitle
+		margin-top 0
+		margin-bottom 55px
+	&__area
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-wrap wrap
+	&-card
+		width 25%
+		text-align center
+		margin-bottom 60px
+		&__logo
+			width 60px
+			height 60px
+			margin 0 auto
+			background url(../img/spritesheet.png) 0 0 no-repeat
+		&:nth-of-type(1)
+			.features-card__logo
+				background-position center center
+		&:nth-of-type(2)
+			.features-card__logo
+				background-position 10px center
+		&:nth-of-type(3)
+			.features-card__logo
+				background-position -110px center
+		&:nth-of-type(4)
+			.features-card__logo
+				background-position 15px 5px
+		&:nth-of-type(5)
+			.features-card__logo
+				background-position 5px -100px
+		&:nth-of-type(6)
+			.features-card__logo
+				width 50px
+				height 50px
+				background-position -45px 0
+				margin-bottom 30px
+		&:nth-of-type(7)
+			.features-card__logo
+				background-position -50px -100px
+		&:nth-of-type(8)
+			.features-card__logo
+				height 50px
+				background-position -90px -3px
+				margin-bottom 30px
+		&:nth-of-type(n + 5)
+			margin-bottom 0
+
+@media screen and (min-width 1400px)
+	.features
+		padding-top 120px
+				
+	
+		

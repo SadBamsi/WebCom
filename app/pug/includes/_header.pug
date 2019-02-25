@@ -1,0 +1,31 @@
+.header
+	.header__logo
+		img(src="/img/header/logo.png" alt="logo-of the company")
+
+	nav.header__nav#header-nav
+		-var values = ['главная', 'портфолио', 'преимущества', 'схема работы', 'отзывы', 'контакты'];
+		-var links = ['main', 'portfolio', 'features', 'work-sheme', 'feedback', 'contacts'];
+		ul.header__menu
+			-for (var i = 0; i < values.length; i++)
+				li.header__nav-item
+					a.header__nav-link(href="#" + links[i])=values[i]
+	nav.header__mobile-nav
+		button.mobile-menu__hamburger-btn
+			span.mobile-menu__toggle
+		ul.mobile-menu
+			-for( i = 0; i < values.length; i++)
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#" + links[i])= values[i]
+			-var phones = ['+375 (29) 123-45-67','+375 (33) 123-45-67'];
+				-for(var i = 0; i < phones.length; i++)
+					li.mobile-menu__item
+						a.mobile-menu__link.mobile-menu__link--phone(href="tel:" + phones[i])= phones[i]
+
+
+
+	.header__tel
+		-var phones = ['+375 (29) 123-45-67','+375 (33) 123-45-67'];
+		-for(var i = 0; i < phones.length; i++)
+			a.header__phones-link(href="tel:" + phones[i])= phones[i]
+
+	button.header__application-button#h_button Оформить заявку

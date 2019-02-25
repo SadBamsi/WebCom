@@ -1,0 +1,18 @@
+section#work.work
+	h2.work__title.section-title наша работа
+	p.work__subtitle.section-subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+	#mobile-slider.owl-carousel.mobile-slider
+		-for(var j = 0; j < 6; j++)
+			.work__item.work-item--mobile
+				img(src="../img/work/work_item.png" alt="pictore of the work")
+				.work__item-wrapper.work__item-wrapper--mobile
+					h4.item-wrapper__title.item-wrapper__title--mobile название работы
+					p.item-wrapper__desc.item-wrapper__desc--mobile описание работы
+
+	.work__examples-area
+		-for(var j = 0; j < 6; j++)
+			.work__item
+				img(src="../img/work/work_item.png" alt="pictore of the work")
+				.work__item-wrapper
+					h4.item-wrapper__title название работы
+					p.item-wrapper__desc описание работы
